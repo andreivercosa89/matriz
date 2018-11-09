@@ -13,7 +13,7 @@ namespace matriz
             string informacao = "";
             for (int linha = 0; linha < 3; linha++)
             {
-                for (int coluna = 0; coluna < 2; coluna++)
+                for (int coluna = 0; coluna < 3; coluna++)
                 {
                     if (coluna % 2 == 0)
                     {
