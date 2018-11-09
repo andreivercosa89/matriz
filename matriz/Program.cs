@@ -6,22 +6,22 @@ namespace matriz
     {
         static void Main(string[] args)
         {
-            string[,] matriz = new string [3, 3];
+            string[,] matriz = new string [3,3];
 
 
             string texto = "";
-            string pedido = "";
+            string informacao = "";
             for (int linha = 0; linha < 3; linha++)
             {
                 for (int coluna = 0; coluna < 2; coluna++)
                 {
                     if (coluna % 2 == 0)
                     {
-                        pedido = "Nome";
+                        informacao = "Nome";
                     }else{
-                        pedido = "Sobrenome";
+                        informacao = "Sobrenome";
                     }
-                        Console.WriteLine("Informe {0}:", pedido);
+                        Console.WriteLine("Informe {0}:", informacao);
                     matriz[linha, coluna] = Console.ReadLine();
                 }
                 texto = "\n";
@@ -30,7 +30,7 @@ namespace matriz
             Console.Clear();
             texto = "";
             for (int linha = 0; linha < 3;linha++){
-                for (int coluna = 0; coluna < 2;coluna++){
+                for (int coluna = 0; coluna < 3;coluna++){
 
                     texto += matriz [linha, coluna]+" ";
                 }
